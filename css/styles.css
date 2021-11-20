@@ -7,6 +7,7 @@
   --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --temporary-bg-color: #2f303a;
+  --social-links: #afb1b8;
 }
 
 body {
@@ -143,6 +144,12 @@ img {
   color: var(--accent-color);
 }
 
+.nav-icons {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
 .site-contact {
   padding: 32px 0;
 
@@ -151,6 +158,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .site-contact:hover,
@@ -160,10 +169,21 @@ img {
 }
 
 .nav-contact-item:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 /* hero */
+
+.hero-section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .hero-title {
   margin-bottom: 30px;
@@ -201,12 +221,6 @@ img {
   background-color: var(--accent-color-hover);
 }
 
-.hero-bg-temporary {
-  background-color: var(--temporary-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 /* advantages */
 
 .advantages-items {
@@ -220,6 +234,19 @@ img {
 
 .advantages-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.advantages-card-icon {
+  width: 270px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--team-bg-color);
 }
 
 .advantages-title {
@@ -283,7 +310,7 @@ img {
 }
 
 .team-item {
-  height: 368px;
+  height: 428px;
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -295,7 +322,7 @@ img {
 }
 
 .team-item-text {
-  padding: 30px 24px;
+  padding: 30px 32px;
 }
 
 .team-item-title {
@@ -303,7 +330,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -312,10 +338,80 @@ img {
   line-height: 1.19;
   color: var(--primary-text-color);
   text-align: center;
-  margin: 0;
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-social-link {
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  color: var(--social-links);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+/* clients */
+
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--social-links);
+  border-radius: 4px;
+  color: var(--social-links);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-logo {
+  fill: currentColor;
 }
 
 /* footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 
 .footer-logo {
   display: block;
@@ -365,6 +461,49 @@ img {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
+}
+
+.footer-socials {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.footer-socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------------------- */
+
+.footer-socials-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.footer-socials-link {
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* PORTPHOLIO */
