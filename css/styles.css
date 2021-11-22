@@ -37,7 +37,7 @@ img {
 	height: auto;
 }
 
-/* All site */
+/* -------All site------- */
 
 *,
 ::after,
@@ -86,7 +86,7 @@ img {
 	padding-bottom: 94px;
 }
 
-/* site-nav */
+/* -------site-nav------- */
 
 .header-border {
 	border-bottom: 1px solid #ececec;
@@ -172,7 +172,7 @@ img {
 	margin-left: 30px;
 }
 
-/* hero */
+/* -------hero------- */
 
 .hero-section {
 	width: 1600px;
@@ -222,7 +222,7 @@ img {
 	background-color: var(--accent-color-hover);
 }
 
-/* advantages */
+/* -------advantages------- */
 
 .advantages-items {
 	display: flex;
@@ -265,7 +265,7 @@ img {
 	color: var(--primary-text-color);
 }
 
-/* wedo */
+/* -------wedo------- */
 
 .wedo-section {
 	padding-top: 0;
@@ -371,7 +371,7 @@ img {
 	fill: currentColor;
 }
 
-/* clients */
+/* -------clients------- */
 
 .clients-title {
 	margin-top: 0;
@@ -384,7 +384,7 @@ img {
 	justify-content: space-between;
 }
 
-.clients-item {
+.clients-link {
 	width: 170px;
 	height: 92px;
 
@@ -397,8 +397,8 @@ img {
 	color: var(--social-links);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
 	color: var(--accent-color);
 	border-color: var(--accent-color);
 }
@@ -407,7 +407,7 @@ img {
 	fill: currentColor;
 }
 
-/* footer */
+/* -------footer------- */
 
 .footer-container {
 	display: flex;
@@ -476,8 +476,6 @@ img {
 	justify-content: space-between;
 }
 
-/* ---------------------- */
-
 .footer-socials-title {
 	font-weight: 700;
 	font-size: 14px;
@@ -507,8 +505,8 @@ img {
 	background-color: var(--accent-color);
 }
 
-/* PORTPHOLIO */
-/* Types of work */
+/* -------PORTPHOLIO------- */
+/* -------Types of work------- */
 
 .works-buttons {
 	display: flex;
@@ -547,7 +545,7 @@ img {
 	cursor: pointer;
 }
 
-/* Our works */
+/* -------works------- */
 
 .works-container {
 	width: 1200px;
@@ -574,8 +572,14 @@ img {
 	background-color: var(--primary-white-color);
 }
 
-.works-item:hover,
-.works-item:focus {
+.works-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.works-link:hover,
+.works-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
